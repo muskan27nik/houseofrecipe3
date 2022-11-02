@@ -36,6 +36,7 @@ router.post("/", upload.single("image"), async (req, res) => {
     cookingtime: req.body.cookingtime,
     preptime: req.body.preptime,
     instructionsteps: req.body.instructionsteps,
+    nutritionsteps: req.body.nutritionsteps,
     cuisine: req.body.cuisine,
     difficulty: req.body.difficulty,
     recipetype: req.body.recipetype,
