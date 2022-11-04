@@ -87,6 +87,32 @@
           <div class="card-body text-center">
             <h4 class="card-title">{{ this.title }}</h4>
             <p class="card-text" id="description"> {{ this.description }}</p>
+            {{#each rating}}
+
+           {{!-- <div class="row my-3 bg-white"> --}}
+               <div class="col-md-12">
+                   <div class="commentbox">
+                   <div class="stars" >
+                       <div>
+                           <h4 class="my-1">
+                               <a href="" class="text-danger">{{this.username}}</a>
+                           </h4>
+                           <p>
+                               {{this.review}}
+                           </p>
+                       </div>
+                       <div>
+                           <ul>
+                               <li class="badge badge-dark d-none" id="rating{{@index}}">{{this.rating}}</li>
+                               <p id="output{{@index}}"></p>
+                           </ul>
+                       </div>
+                   </div>
+                   <hr>
+               </div>
+           </div>
+           </div>
+           {{/each}}
 
 
           </div>
