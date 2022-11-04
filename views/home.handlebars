@@ -86,8 +86,15 @@
 
           <div class="card-body text-center">
             <h4 class="card-title">{{ this.title }}</h4>
+            <h4>
+                       <ul>
+                           <li class="badge badge-dark d-none" id="rating{{@index}}">{{this.rating}}</li>
+                           <p id="output{{@index}}"></p>
+                       </ul>
+                   </h4>
             <p class="card-text" id="description"> {{ this.description }}</p>
-            
+
+
           </div>
           <p class="text-center" id="viewButton"> <a href="/recipe/{{ this._id }}" class="btn btn-danger mb-2 hvr-curl-top-left">View
               Recipe</a></p>
